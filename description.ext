@@ -1,0 +1,15 @@
+author = "Recon Chicken and Zorn";
+onLoadName = "HAM KS Recovery";
+onLoadMission = "HAM KS Recovery";
+enabledebugconsole = 1;
+
+
+respawn = 3;
+respawnDelay = 120;
+respawnDialog = 0;
+respawnOnStart = 0;
+respawnTemplates[] = {"Counter", "Wave","ace_spectator"};
+
+// Disable BI wreck system (H&M handle it internally)
+wreckManagerMode = 0;
+corpseManagerMode = 0;
