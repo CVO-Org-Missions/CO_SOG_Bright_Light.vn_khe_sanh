@@ -86,10 +86,10 @@ private _aceAction = [
     ,""                                     //  * 2: Icon <STRING> "\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"
     ,_state                                 //  * 3: Statement <CODE>
     ,_cond                                  //  * 4: Condition <CODE>
-//    ,{}                                   //  * 5: Insert children code <CODE> (Optional)
-//    ,_params                              //  * 6: Action parameters <ANY> (Optional)
-//    ,[0,0,0]                              //  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
-//    ,20                                   //  * 8: Distance <NUMBER> (Optional)
+    ,{}                                     //  * 5: Insert children code <CODE> (Optional)
+    ,[]                                     //  * 6: Action parameters <ANY> (Optional)
+    ,[0,0,0]                                //  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
+    ,20                                     //  * 8: Distance <NUMBER> (Optional)
 //    ,[false,false,false,false,false]      //  * 9: Other parameters [showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] <ARRAY> (Optional)
 //    ,{}                                   //  * 10: Modifier function <CODE> (Optional)
 ] call ace_interact_menu_fnc_createAction;
