@@ -13,3 +13,6 @@ respawnTemplates[] = {"Counter", "Wave","ace_spectator"};
 // Disable BI wreck system (H&M handle it internally)
 wreckManagerMode = 0;
 corpseManagerMode = 0;
+
+
+#include "CfgFunctions.hpp"
