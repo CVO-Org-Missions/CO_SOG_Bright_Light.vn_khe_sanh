@@ -24,12 +24,15 @@ private _state = {
 
     [
         45                      // * 0: Total Time (in game "time" seconds) <NUMBER>
-        ,[]                     // * 1: Arguments, passed to condition, fail and finish <ARRAY>
+        ,[_target]                     // * 1: Arguments, passed to condition, fail and finish <ARRAY>
         // * 2: On Finish: Code called or STRING raised as event. <CODE, STRING>
         ,{
             params ["_args", "_elapsedTime", "_totalTime", "_errorCode"];
+            _args params ["_target"];
             missionNamespace setVariable ["trigger_wire_cut", true, true];
             missionNamespace setVariable ["mission_cutting_loop", false];
+
+            { deleteVehicle _x } forEach nearestObjects [_target,["Land_TelephoneLine_01_wire_50m_main_F"], 30];
         }
         // * 3: On Failure: Code called or STRING raised as event. <CODE, STRING>
         ,{
