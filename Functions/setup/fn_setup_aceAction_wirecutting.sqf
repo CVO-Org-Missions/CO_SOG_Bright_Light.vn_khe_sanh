@@ -14,7 +14,7 @@
 */
 
 
-private _params = ["_object"];
+params ["_object"];
 
 private _state = {
     params ["_target", "_player", "_actionParams"];
