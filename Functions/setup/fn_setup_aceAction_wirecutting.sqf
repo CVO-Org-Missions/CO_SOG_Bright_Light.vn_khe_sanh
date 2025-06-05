@@ -33,7 +33,10 @@ private _state = {
             missionNamespace setVariable ["mission_cutting_loop", false];
 
             { deleteVehicle _x } forEach nearestObjects [_target,["Land_TelephoneLine_01_wire_50m_main_F"], 30];
-        }
+
+            createVehicle ["Helper_Base_F", getPos _target, [], 0, "CAN_COLLIDE"];
+            
+            }
         // * 3: On Failure: Code called or STRING raised as event. <CODE, STRING>
         ,{
             missionNamespace setVariable ["mission_cutting_loop", false];
